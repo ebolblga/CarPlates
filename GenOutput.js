@@ -1,7 +1,7 @@
 const fs = require("fs");
-let words = fs.readFileSync("./Library/russianUTF-8.txt").toString()
-words = words.split("\r\n");
-
+let words = fs.readFileSync("./Library/ebeba.txt").toString()
+words = words.split("\n");
+console.log(words)
 const includedSymbols = /[озчбд]/;  //03469
 
 const ans1 = words.filter(word=>/^[^-./бгдёжзийлпфцчшщъыьэюяБГДЁЖЗИЙЛПФЦЧШЩЪЫЬЭЮЯ][озчбд]{3}[^-./бгдёжзийлпфцчшщъыьэюяБГДЁЖЗИЙЛПФЦЧШЩЪЫЬЭЮЯ]{2}$/.test(word))

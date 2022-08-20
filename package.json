@@ -6,14 +6,17 @@
     "node-html-parser": "^5.4.2-0"
   },
   "scripts": {
-    "words":"node Gen6LetterOutput.js",
-    "swears":"node Gen6LetterOutput.js swears.txt",
-    "eboba":"node Gen6LetterOutput.js ebeba.txt",
+    "words6":"node Gen6LetterOutput.js",
+    "swears6":"node Gen6LetterOutput.js swears.txt",
+    "eboba6":"node Gen6LetterOutput.js ebeba.txt",
     "swearGenerate":"node Parser.js",
     "ebobaGenerate":"node GenFunnyWordList.js",
     "words3":"node Gen3LetterOutput.js",
     "swears3":"node Gen3LetterOutput.js swears.txt",
-    "eboba3":"node Gen3LetterOutput.js ebeba.txt"
+    "eboba3":"node Gen3LetterOutput.js ebeba.txt",
+    "words":"node GenLetterOutput.js",
+    "swears":"node GenLetterOutput.js swears.txt",
+    "eboba":"node GenLetterOutput.js ebeba.txt"
   },
   "license": "GPL-3.0"
 }

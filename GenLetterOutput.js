@@ -17,8 +17,8 @@ const ans2 = words
   .map(word=>/^([авекмнорстух]?)([озчбд]{0,2})$/i.exec(word))
   .map(([a,b,c])=>b.padStart(1,"*")+c.padEnd(5,"*"))
 const ans3 = words
-  .filter(word=>/^[озчбд]{0,2}[авекмнорстух]{0,2}$/i.test(word))
-  .map(word=>/^([озчбд]{0,2})([авекмнорстух]{0,2})$/i.exec(word))
+  .filter(word=>/^[озчбд]{0,2}[авекмнорстух]{1,2}$/i.test(word))
+  .map(word=>/^([озчбд]{0,2})([авекмнорстух]{1,2})$/i.exec(word))
   .map(([a,b,c])=>b.padStart(4,"*")+c.padEnd(2,"*"))
 
 console.log(...ans1,...ans2,...ans3)

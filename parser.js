@@ -16,8 +16,7 @@ async function getWords(letter, mst = 0) {
 }
 
 async function f() {
-  const promises = [];
-  Letters.forEach((letter, i) => promises.push(getWords(letter)));
+  const promises = Letters.map(letter=>getWords(letter));
   const words = (await Promise.all(promises)).flat();
   //console.log(words)
   await fs.writeFile(
@@ -25,4 +24,4 @@ async function f() {
     words.map((word) => word.replace(/[\s(),!?-]/g, "")).join("\n")
   );
 }
-f()
+f();

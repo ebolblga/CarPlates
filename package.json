@@ -10,7 +10,10 @@
     "swears":"node GenOutput.js swears.txt",
     "eboba":"node GenOutput.js ebeba.txt",
     "swearGenerate":"node parser.js",
-    "ebobaGenerate":"node eboba.js"
+    "ebobaGenerate":"node eboba.js",
+    "words3":"node Gen3LetterOutput.js",
+    "swears3":"node Gen3LetterOutput.js swears.txt",
+    "eboba3":"node Gen3LetterOutput.js ebeba.txt"
   },
   "license": "GPL-3.0"
 }

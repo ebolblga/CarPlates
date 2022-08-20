@@ -1,11 +1,14 @@
 const fs = require("fs");
-let words = fs.readFileSync("./Library/ebeba.txt").toString()
+const file = process.argv[2] || "russianUTF-8.txt";
+let words = fs.readFileSync("./Library/"+file).toString()
 words = words.split("\n");
+if(words.length || words[0].at(-1)=="\r") 
+  words = words.map(word=>word.slice(0,-1))
 console.log(words.length)
 
 // Доступные буквы: ABЕКМНОРСТУХ
 // Доступные цифры: 03469 (озчбд)
-const ans1 = words.filter(word=>/^[^-./бгдёжзийлпфцчшщъыьэюяБГДЁЖЗИЙЛПФЦЧШЩЪЫЬЭЮЯ][озчбд]{3}[^-./бгдёжзийлпфцчшщъыьэюяБГДЁЖЗИЙЛПФЦЧШЩЪЫЬЭЮЯ]{2}$/.test(word))
+const ans1 = words.filter(word=>/^[авекмнорстух][озчбд]{3}[авекмнорстух]{2}$/.test(word))
 
 console.log(ans1)
 

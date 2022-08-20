@@ -6,11 +6,11 @@
     "node-html-parser": "^5.4.2-0"
   },
   "scripts": {
-    "words":"node GenOutput.js",
-    "swears":"node GenOutput.js swears.txt",
-    "eboba":"node GenOutput.js ebeba.txt",
-    "swearGenerate":"node parser.js",
-    "ebobaGenerate":"node eboba.js",
+    "words":"node Gen6LetterOutput.js",
+    "swears":"node Gen6LetterOutput.js swears.txt",
+    "eboba":"node Gen6LetterOutput.js ebeba.txt",
+    "swearGenerate":"node Parser.js",
+    "ebobaGenerate":"node GenFunnyWordList.js",
     "words3":"node Gen3LetterOutput.js",
     "swears3":"node Gen3LetterOutput.js swears.txt",
     "eboba3":"node Gen3LetterOutput.js ebeba.txt"

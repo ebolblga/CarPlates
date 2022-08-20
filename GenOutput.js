@@ -8,7 +8,7 @@ console.log(words.length)
 
 // Доступные буквы: ABЕКМНОРСТУХ
 // Доступные цифры: 03469 (озчбд)
-const ans1 = words.filter(word=>/^[авекмнорстух][озчбд]{3}[авекмнорстух]{2}$/.test(word.toLowerCase()))
+const ans1 = words.filter(word=>/^[авекмнорстух][озчбд]{3}[авекмнорстух]{2}$/i.test(word))
 
 console.log(ans1)
 

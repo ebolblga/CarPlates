@@ -44,9 +44,9 @@
 ![image](https://user-images.githubusercontent.com/82185066/185746086-ee81022b-0341-4bba-8685-4bb360307912.png)
 
 ## Как запустить проект самому
-Используя Visual Studio Code в консоли написать
+Используя Visual Studio Code и Node.js в консоли написать
 ```
-yarn install (или npm install) для установки всех модулей
+yarn (или npm install) для установки всех модулей
 node GenOutput.js для запуска
 ```
 

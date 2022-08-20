@@ -1,9 +1,10 @@
 const fs = require("fs");
 let words = fs.readFileSync("./Library/ebeba.txt").toString()
 words = words.split("\n");
-console.log(words)
-const includedSymbols = /[озчбд]/;  //03469
+console.log(words.length)
 
+// Доступные буквы: ABЕКМНОРСТУХ
+// Доступные цифры: 03469 (озчбд)
 const ans1 = words.filter(word=>/^[^-./бгдёжзийлпфцчшщъыьэюяБГДЁЖЗИЙЛПФЦЧШЩЪЫЬЭЮЯ][озчбд]{3}[^-./бгдёжзийлпфцчшщъыьэюяБГДЁЖЗИЙЛПФЦЧШЩЪЫЬЭЮЯ]{2}$/.test(word))
 
 console.log(ans1)
@@ -16,5 +17,5 @@ const Map = {
   д:9
 }
 
-const carPlates = ans1.map(word=>word.replace(/[озчбд]/g,e=>Map[e]))
-console.log(carPlates)
+//const carPlates = ans1.map(word=>word.replace(/[озчбд]/g,e=>Map[e]))
+//console.log(carPlates)

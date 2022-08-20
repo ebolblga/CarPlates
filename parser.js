@@ -18,9 +18,7 @@ async function getWords(letter, mst = 0) {
 async function f() {
   const promises = [];
   Letters.forEach((letter, i) => promises.push(getWords(letter)));
-  const wordPages = await Promise.all(promises);
-  const words = [];
-  wordPages.forEach((page) => words.push(...page));
+  const words = (await Promise.all(promises)).flat();
   //console.log(words)
   await fs.writeFile(
     "./Library/swears.txt",

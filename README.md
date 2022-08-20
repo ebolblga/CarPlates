@@ -11,14 +11,14 @@
 0 - О, 3 - З, 4 - Ч, 6 - Б, 9 - Д
 
 ## База данных слов
-Для данного поекта я скачал [базу данных](https://github.com/danakt/russian-words) из 1.531.464 существующих русских слов.
+Для данного поекта я скачал [базу данных](https://github.com/danakt/russian-words) из 1.531.464 существующих русских слов во всех морфологических формах.
 Далее [ahibis](https://github.com/ahibis) дополнительно запарсил 2784 бранных слова с [данного сайта](https://2yxa.ru/mat/). Нашлось место и генерации смешных слов с помощью субверсии языкового шаблона, используя заведомо забавные паттерны в словах.
 
 ## Поиск
 И так в одном регионе всего существует 12^3 * 10^3 = 1.728.000 номеров и среди них нужно найти слова из нашей базы данных. Язык JavaScript был выбран не случайно, он отлично подходит для написания [регулярных выражений](https://ru.wikipedia.org/wiki/%D0%A0%D0%B5%D0%B3%D1%83%D0%BB%D1%8F%D1%80%D0%BD%D1%8B%D0%B5_%D0%B2%D1%8B%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F). Выполнив программу на первой базе данных у нас остаётся всего 87 слов, которые можно написать на номерных знаках:
 ![image](https://user-images.githubusercontent.com/82185066/185744778-2ff13e27-d71c-4478-a80c-34231c71fb2e.png)
 
-Из интересных:<br />
+Из интересных (для картинки номеры использовался [данный](https://carsvin.ru/auto/nomer#poluchit) ресурс):<br />
 Моздок (M039OK)<br />
 ![image](https://user-images.githubusercontent.com/82185066/185744893-fc24e053-2370-42ca-b40c-12443ff7014a.png)
 
@@ -40,3 +40,13 @@
 
 Ебобун (E606YH)<br />
 ![image](https://user-images.githubusercontent.com/82185066/185745271-d69acc8d-e61d-451d-a9a1-c0965331fd8a.png)
+
+## Как запустить проект самому
+Используя Visual Studio Code в консоли написать
+```
+yarn install (или npm install) для установки всех модулей
+node GenOutput.js для запуска
+```
+
+## License
+This program is licensed under the GPL-3.0 License. Please read the License file to know about the usage terms and conditions.

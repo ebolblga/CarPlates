@@ -35,7 +35,7 @@
 ![image](https://user-images.githubusercontent.com/82185066/185763085-1b8b1825-97cf-42f7-941b-7c843ee9bd10.png)
 
 Что касается генерации смешных слов, из 1280 нашлись несколько:<br />
-![image](https://user-images.githubusercontent.com/82185066/185763013-710bf71c-c022-49d9-9f3b-ce152b8b74fd.png)
+![image](https://user-images.githubusercontent.com/82185066/185764649-50a85b10-364f-4a0f-a2bf-9c22a233651c.png)
 
 Из интересных:<br />
 Абобан (A606AH)<br />
@@ -43,6 +43,10 @@
 
 Ебобун (E606YH)<br />
 ![image](https://user-images.githubusercontent.com/82185066/185745271-d69acc8d-e61d-451d-a9a1-c0965331fd8a.png)
+
+Вбздун (B639YH)<br />
+![image](https://user-images.githubusercontent.com/82185066/185764671-27713bfe-71b6-4c75-96ae-71eed0ed2c83.png)
+
 
 Так же можно искать слова из трёх букв которые будут использовать лишь серию номерного знака и будут выглядеть так:<br />
 ![image](https://user-images.githubusercontent.com/82185066/185764337-098e46c4-f85d-441a-a546-64dc00735229.png)<br />

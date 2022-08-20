@@ -3,5 +3,13 @@
     "axios": "^0.27.2",
     "iconv-lite": "^0.6.3",
     "node-html-parser": "^5.4.2-0"
-  }
+  },
+  "scripts": {
+    "words":"node GenOutput.js",
+    "swears":"node GenOutput.js swears.txt",
+    "eboba":"node GenOutput.js ebeba.txt",
+    "swearGenerate":"node parser.js",
+    "ebobaGenerate":"node eboba.js"
+  },
+  "license": "GPL-3.0"
 }
